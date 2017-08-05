@@ -2,13 +2,40 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
+<script type="text/javascript" src="Javascript/index.js"></script>
 </head>
-<body id="body">
+<body id="body" onload="main()">
   <div class="header">
-    <p id="headerTitle">Welcome</p>
+    <div id="navBar">
+      <img src="http://mita4829.github.io/Images/sideButton.png" id="sideButton" onclick="presentSideView()"/>
+      <!--<img src="Images/sideButton.png" id="sideButton" onclick="presentSideView()"/>-->
+    </div>
+
+      <!--<img src="Images/index.jpg"/>-->
+      <img src="http://mita4829.github.io/Images/Index.jpg"/>
+      <!-- hmm I perhaps not... -->
   </div>
-  <div class="content">
-    <p id="title">H</p>
+  <div id="content">
+    <div class="container">
+      <p class="subTitle">About</p>
+      <p class="blockText">Hello! My name is Michael Tang. I am a senior at the University of Colorado - Boulder studying computer science and mathematics.
+My interest in computer science involve writting programs in C, C++, and Python, studying weird data structures, and learning how to write better algorithms that are not <i>O(n!)</i>.
+In my free time, I enjoy making small projects ranging from iOS apps, themes/packages for jailbroken iPhones, to even working on my own programming language! plus this <i>silly</i> attempt at making my own website, recalling my all
+strengths in CSS. Scroll below to see my past project!
+      </p>
+    </div>
+    <div class="container">
+      <p class="subTitle">Projects</p>
+      <p class="blockText">iOS themes/packages. <i>For best parallax effect, view this site on a mobile device!</i>. One of my favorite things to do is craft new icons for iPhones. Back in the <i>old</i> days, iOS looked so pretty until it became a flat-mix of bright colors that looks like a
+      child's toy phone that is today... With my Adobe Photoshop, I went back to the old iOS icons and crafted each icon you see below from scratch. This year long project yield 50+ icons and over 3K downloads on the Cydia Store. </p>
+      <div class="parallax">
+        <img src="http://mita4829.github.io/Images/Parallax.png" id="icons"/>
+        <!--<img src="Images/Parallax.png" id="icons"/>-->
+      </div>
+      <!--<p id="x">x</p>
+      <p id="y">y</p>
+      <p id="z">z</p>-->
+    </div>
   </div>
 </body>
 </html>
