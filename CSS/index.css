@@ -4,12 +4,12 @@ html{
 }
 p{
   font-family:Helvetica,Arial;
-  color:rgba(244,244,244,1);
+  color:rgba(50,50,50,1);
   font-weight: lighter;
 }
 body{
   position: absolute;
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(234, 234, 234, 1);
   width:100%;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body{
   margin: 0px;
   padding: 0px;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(234, 234, 234, 1);
 }
 .container{
   margin: 20px;
@@ -46,7 +46,7 @@ body{
   text-align: center;
 }
 .headerTitle{
-  display: table-cell;
+
   vertical-align: middle;
   text-align: center;
   font-size: 64px;
@@ -55,15 +55,17 @@ body{
   text-shadow: 0px 1px 5px grey;
 }
 .subTitle{
-  font-size: 24px;
+  font-size: 36px;
 }
 .blockText{
-  color: rgba(200,200,200,1);
+  color: rgba(70,70,70,1);
+  font-size: 20px;
 }
 
 #navBar{
   position: fixed;
-  background-color: rgba(50, 50, 50, 1);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(234, 234, 234, 0.8);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   width:100%;
   z-index: 1;
@@ -85,9 +87,14 @@ body{
   padding-top: 10px;
 }
 
-.parallax{
-
+#parallax{
+  position: relative;
   background: url("../Images/ParallaxWallpaper.png");
   background-size: cover;
   width: auto;
+}
+
+.centerImage{
+  position: relative;
+  width: 100%;
 }
