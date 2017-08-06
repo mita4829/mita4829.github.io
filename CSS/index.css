@@ -38,12 +38,15 @@ body{
   margin: 0px;
   padding: 0px;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgba(234, 234, 234, 1);
+  background-color: rgba(240, 240, 240, 1);
 }
 .container{
-  margin: 20px;
-  padding: 0px;
-  text-align: center;
+  margin: 40px;
+  padding: 10px;
+  text-align: justify;
+  background-color: rgba(230, 230, 230, 1);
+  border-radius: 10px;
+  box-shadow: 0px -1px 5px rgba(70,70,70,0.5);
 }
 .headerTitle{
 
@@ -73,28 +76,87 @@ body{
 
 #icons{
   position: relative;
+  width: 100%;
 }
-
-#sideButton{
-  position: absolute;
-  display: block;
-  position: absolute;
-
-  height: auto;
-  width: auto;
-  top: 0px;
-  padding-left: 10px;
-  padding-top: 10px;
+#icons2{
+  position: relative;
+  width: 100%;
 }
 
 #parallax{
   position: relative;
   background: url("../Images/ParallaxWallpaper.png");
   background-size: cover;
-  width: auto;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+#parallax2{
+  position: relative;
+  background: url("../Images/MacOS.png");
+  background-size: cover;
+  width:100%;
+  margin: 0;
+  padding: 0;
 }
 
 .centerImage{
   position: relative;
-  width: 100%;
+  width: inherit;
+}
+
+
+#box2{
+  display: inline-block;
+  position: absolute;
+  left:0;
+  margin-left: 40px;
+  margin-top: 0px;
+  width:45%;
+  height: 100%;
+}
+#box3{
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  width:46%;
+  height: 100%;
+}
+.parent{
+  width:inherit;
+  text-align: center;
+}
+@media only screen and (min-width:375px) and (max-width: 1000px) {
+  .subTitle{
+    font-size: 48px;
+  }
+  .blockText{
+    color: rgba(70,70,70,1);
+    font-size: 36px;
+  }
+  .container{
+    margin: 40px;
+    padding: 20px;
+    text-align: justify;
+    background-color: rgba(230, 230, 230, 1);
+    border-radius: 20px;
+    box-shadow: 0px -1px 5px rgba(70,70,70,0.5);
+    overflow: hidden;
+  }
+  .parent{
+    width: inherit;
+  }
+  #box2{
+    margin: 40px;
+    padding: 10px;
+    position: relative;
+    width: auto;
+  }
+  #box3{
+    margin: 40px;
+    padding: 10px;
+    position: relative;
+    width: auto;
+  }
 }
