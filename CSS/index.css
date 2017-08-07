@@ -83,7 +83,7 @@ a{
   position: relative;
   background: url("../Images/ParallaxWallpaper.png");
   background-size: cover;
-  width:400px;
+  width:100%;
   margin: 0 auto;
 }
 
