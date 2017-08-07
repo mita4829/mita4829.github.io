@@ -88,21 +88,20 @@ a{
   background-size: cover;
   width:100%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 #parallax2{
   position: relative;
+  background: url("../Images/MacOS.png");
   background-size: cover;
   width:100%;
   margin: 0 auto;
 }
 
 #macOS{
-  position: absolute;
-  left:0;
-  width:100%;
-  max-height: 400px;
-
+  position: relative;
+  width: 100%;
 }
 
 .centerImage{
@@ -117,19 +116,19 @@ a{
 }
 #box3{
   position: relative;
-  flex: 1;
+  flex: 2;
 }
 .parent{
   display: flex;
 }
 @media only screen and (min-width:375px) and (max-width: 1000px) {
   .subTitle{
-    font-size: 48px;
+    font-size: 36px;
     color:rgba(200,200,200,1);
   }
   .blockText{
     color: rgba(170,170,170,1);
-    font-size: 36px;
+    font-size: 24px;
   }
   .container{
     margin: 40px;
