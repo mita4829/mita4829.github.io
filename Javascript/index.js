@@ -12,9 +12,6 @@ function parallax(){
             document.getElementById('icons').style.top = -10+y/2.5+"px";
             //document.getElementById('parallax').style.left = -(x/3)+"px";
 
-            document.getElementById('icons2').style.left = x/5+"px";
-            document.getElementById('icons2').style.top = -10+y/5+"px";
-
         }, true);
     }
 }
@@ -24,18 +21,14 @@ function checkIfMobile(){
     return mobile;
 }
 
-function navigationBarView(mobile){
-  if(mobile){
-    document.getElementById("navBar").style.height = "90px";
-    document.getElementById("navBar").style.minHeight = "90px";
-
-    //document.getElementById("sideButton").style.height = "80%";
-
+var direction = false;
+function invertToolBar(){
+  if(!direction){
+    document.getElementById("navBar").style.height = "500px";
+    direction = true;
   }else{
-    document.getElementById("navBar").style.height = "12%";
-    document.getElementById("navBar").style.minHeight = "70px";
-
-    //document.getElementById("sideButton").style.height = "75%";
+    document.getElementById("navBar").style.height = "100px";
+    direction = false;
   }
 }
 
