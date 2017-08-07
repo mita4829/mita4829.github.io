@@ -4,12 +4,12 @@ html{
 }
 p{
   font-family:Helvetica,Arial;
-  color:rgba(50,50,50,1);
+  color:rgba(240,240,240,1);
   font-weight: lighter;
 }
 body{
   position: absolute;
-  background-color: rgba(234, 234, 234, 1);
+  background-color: rgba(30, 30, 30, 1);
   width:100%;
   margin: 0;
   padding: 0;
@@ -38,39 +38,35 @@ body{
   margin: 0px;
   padding: 0px;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgba(240, 240, 240, 1);
+  background-color: rgba(30, 30, 30, 1);
 }
 .container{
-  margin: 40px;
+  margin: 20px;
   padding: 10px;
-  text-align: justify;
-  background-color: rgba(230, 230, 230, 1);
-  border-radius: 10px;
-  box-shadow: 0px -1px 5px rgba(70,70,70,0.5);
-}
-.headerTitle{
-
-  vertical-align: middle;
   text-align: center;
-  font-size: 64px;
-  color: white;
-  font-weight: lighter;
-  text-shadow: 0px 1px 5px grey;
+  background-color: rgba(40, 40, 40, 1);
+  border-radius: 10px;
+  box-shadow: 0px -3px 3px rgba(0,0,0,0.7);
 }
+
 .subTitle{
   font-size: 36px;
+  color:rgba(200,200,200,1);
 }
 .blockText{
-  color: rgba(70,70,70,1);
+  color: rgba(170,170,170,1);
   font-size: 20px;
 }
-
+a{
+  color:rgba(100, 150, 255 , 1);
+}
 #navBar{
   position: fixed;
   -webkit-backdrop-filter: blur(15px);
-  background-color: rgba(234, 234, 234, 0.8);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(60, 60, 60, 0.5);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
   width:100%;
+  height:80px;
   z-index: 1;
 }
 
@@ -87,16 +83,17 @@ body{
   position: relative;
   background: url("../Images/ParallaxWallpaper.png");
   background-size: cover;
-  width:100%;
-  margin: 0;
-  padding: 0;
+  width:400px;
+  margin: 0 auto;
 }
 
 #parallax2{
-  position: relative;
+  position: absolute;
+  right:0;
+  bottom: 0;
   background: url("../Images/MacOS.png");
   background-size: cover;
-  width:100%;
+  width:350px;
   margin: 0;
   padding: 0;
 }
@@ -108,44 +105,36 @@ body{
 
 
 #box2{
-  display: inline-block;
-  position: absolute;
-  left:0;
-  margin-left: 40px;
-  margin-top: 0px;
-  width:45%;
-  height: 100%;
+  position: relative;
+  flex: 1;
 }
 #box3{
-  display: inline-block;
-  position: absolute;
-  margin: auto;
-  width:46%;
-  height: 100%;
+  position: relative;
+  flex: 1;
 }
 .parent{
-  width:inherit;
-  text-align: center;
+  display: flex;
 }
 @media only screen and (min-width:375px) and (max-width: 1000px) {
   .subTitle{
     font-size: 48px;
+    color:rgba(200,200,200,1);
   }
   .blockText{
-    color: rgba(70,70,70,1);
+    color: rgba(170,170,170,1);
     font-size: 36px;
   }
   .container{
     margin: 40px;
     padding: 20px;
     text-align: justify;
-    background-color: rgba(230, 230, 230, 1);
+    background-color: rgba(40, 40, 40, 1);
     border-radius: 20px;
     box-shadow: 0px -1px 5px rgba(70,70,70,0.5);
     overflow: hidden;
   }
   .parent{
-    width: inherit;
+    display: block;
   }
   #box2{
     margin: 40px;
