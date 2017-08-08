@@ -32,8 +32,38 @@ function invertToolBar(){
   }
 }
 
+function navBarDrag(){
+    var bar = document.getElementById("navBar");
+    var barHeight = 600; //Change this if nav window needs to be resized
+    bar.addEventListener('touchmove', function(event) {
+        var touch = event.targetTouches[0];
+        var touchY = touch.pageY;
+
+        bar.style.top = (touchY-barHeight)+ 'px';
+        //document.getElementById('x').innerHTML = bar.style.top;
+        if(touchY >= barHeight){
+          bar.style.top = "0px";
+        }else if(touchY <= 100){
+          bar.style.top = "-500px";
+        }
+        event.preventDefault();
+    }, false);
+}
+
+var direction = false;
+function invertToolBar() {
+    var bar = document.getElementById("navBar");
+    if(!direction){
+        direction = true;
+        bar.style.top = "0px";
+    }else{
+        direction = false;
+        bar.style.top = "-500px";
+    }
+}
 function main(){
   var mobile = checkIfMobile();
+  navBarDrag();
   if(mobile){
     parallax();
   }
