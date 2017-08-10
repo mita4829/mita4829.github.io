@@ -21,17 +21,6 @@ function checkIfMobile(){
     return mobile;
 }
 
-var direction = false;
-function invertToolBar(){
-  if(!direction){
-    document.getElementById("navBar").style.height = "500px";
-    direction = true;
-  }else{
-    document.getElementById("navBar").style.height = "100px";
-    direction = false;
-  }
-}
-
 function navBarDrag(){
     var bar = document.getElementById("navBar");
     var barHeight = 600; //Change this if nav window needs to be resized

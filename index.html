@@ -7,7 +7,9 @@
 <body id="body" onload="main()">
   <div class="header">
     <div id="navBar" onclick="invertToolBar()"> <!--onclick="invertToolBar()"> -->
-      <!--<p class="navBarText">Hello</p>-->
+      <!--<p class="navBarText">About</p>
+      <p class="navBarText">Projects</p>
+      <p class="navBarText">Contact</p>-->
       <!--<img src="http://mita4829.github.io/Images/sideButton.png" id="sideButton" onclick="presentSideView()"/>-->
       <img src="Images/Grabber.png" id="grabber"/>
 
@@ -25,6 +27,9 @@ My interest in computer science involve writting programs in C, C++, and Python,
 In my free time, I enjoy making small projects ranging from iOS apps, themes/packages for jailbroken iPhones, to even working on my own programming language! plus this <i>silly</i> attempt at making my own website, recalling my all
 strengths in CSS. Scroll below to see my past project!
       </p>
+    </div>
+    <div class="container">
+      <p class="subTitle">Projects</p>
     </div>
     <div class="parent">
     <div class="container" id="box2">
@@ -55,6 +60,42 @@ of iPhones to be of a Mac! This particular theme has accumulated 200K+ downloads
   </div>
   <div class="container">
     <p class="subTitle">Acorn</p>
+    <p class="blockText">
+    One of my more ambitious project, Acorn, is a programming language made from scratch. It's the most challenging project I've taken on so far. Building a program that takes a program with infinite combinations of legal input became a mind-boggling realization.
+    This project took a month to complete and near a year to refine. From left-to-right, you will
+    see the order of how Acorn code becomes translated and ran. The process goes Acorn source code, lexed source, tokenized source and parse, finally Acorn output. Acorn is an interpreted-programming language written in Python, which means
+    that Acorn code becomes translated into and evaulated in Python. The goal of this project was to learn more about language creation, lexing, recursive-descent parsing, interpreting, language syntax/semantics,
+    parse tress, abstract syntax trees, abstract-memory handling, lexical scoping, etc...
+    </p>
+    <div id="box4">
+      <textarea class="field">
+var n = 15;
+if(n%15 == 0){
+    print("Fizzbuzz");
+}else if(n%5 == 0){
+    print("Buzz");
+}else if(n%3 == 0){
+    print("Fizz");
+}; </textarea>
+<textarea class="field" id="lex">
+[var,n,=,15,;]
+[if,(,n,%,15,==,0,),{]
+[print,(,"Fizzbuzz",),;]
+[},else,if,(,n,%,5,==,0,),{]
+[print,(,"Buzz",),;]
+[},else,if,(,n,%,3,==,0,),{]
+[print,(,"Fizz",),;]
+[},;]
+</textarea>
+<textarea class="field" id="pars">
+Assign(Var(n),N(15))
+If(Eq(Binary("Mod",Var(n),N(15)),N(0)),Print("Fizzbuzz"),If(Eq(Binary("Mod",Var(n),N(5)),N(0)),Print("Buzz"),If(Eq(Binary("Mod",Var(n),N(3)),N(0)),Print("Fizz"),Null())))
+</textarea>
+
+<textarea class="field" id="output">
+Fizzbuzz
+</textarea>
+    </div>
   </div>
   </div>
 </body>

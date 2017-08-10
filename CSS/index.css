@@ -18,7 +18,8 @@ body{
 .navBarText{
   text-align: center;
   font-size: 36px;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+  font-weight: 500;
+  background-color: grey;
 }
 .header{
   /*background: url("http://mita4829.github.io/Images/Index.jpg") no-repeat top center fixed;*/
@@ -67,9 +68,9 @@ a{
 }
 #navBar{
   position: absolute;
-  -webkit-backdrop-filter: blur(15px);
-  background-color: rgba(60, 60, 60, 0.5);
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+  -webkit-backdrop-filter: blur(30px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(240, 240, 240, 0.6);
   border-radius: 0 0 20px 20px;
   top:-500px;
   width:100%;
@@ -127,6 +128,26 @@ a{
   position: relative;
   flex: 2;
 }
+#box4{
+  position: relative;
+}
+.field{
+  font-size: 18px;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  background-color: rgba(255,151,87,1);
+  width:300px;
+  height:300px;
+  color:rgba(50,50,50,1);
+}
+#lex{
+  background-color: rgba(255,194,87,1);
+}
+#pars{
+  background-color: rgba(88,139,220,1);
+}
+#output{
+  background-color: rgba(74,219,187,1);
+}
 .parent{
   display: flex;
 }
@@ -152,13 +173,13 @@ a{
   }
   #box2{
     margin: 40px;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     width: auto;
   }
   #box3{
     margin: 40px;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     width: auto;
   }
