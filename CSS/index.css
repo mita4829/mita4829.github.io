@@ -28,7 +28,7 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  position: relative;
+
 }
 
 .header img{
@@ -82,10 +82,8 @@ a{
 }
 
 #grabber{
-  position: relative;
+  position: absolute;
   width: 100px;
-  margin: 0 auto;
-  margin-top: 540px;
   margin-bottom: 0;
 }
 
@@ -198,7 +196,7 @@ a{
     position: relative;
   }
   .field{
-    font-size: 22px;
+    font-size: 30px;
     position: relative;
     font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
     background-color: rgba(255,151,87,1);

@@ -8,9 +8,9 @@ function parallax(){
             //document.getElementById('x').innerHTML = x;
             //document.getElementById('y').innerHTML = y;
             //document.getElementById('z').innerHTML = z;
-            document.getElementById('icons').style.left = x/2+"px";
-            document.getElementById('icons').style.top = -10+y/2+"px";
-            document.getElementById('parallax').style.left = -(x/4)+"px";
+            document.getElementById('icons').style.left = x/3+"px";
+            document.getElementById('icons').style.top = -10+y/3+"px";
+            document.getElementById('parallax').style.left = -(x/3)+"px";
 
         }, true);
     }
@@ -65,6 +65,6 @@ function main(){
     navBarDrag();
     parallax();
   }else{
-    hideNavBar();
+    //hideNavBar();
   }
 }
