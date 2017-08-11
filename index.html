@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
 <script type="text/javascript" src="Javascript/index.js"></script>
 </head>
-<body id="body" onload="main()">
+<body id="body" onload="main()" onscroll="parallaxHeader()">
   <div class="header">
     <div id="navBar" onclick="invertToolBar()"> <!--onclick="invertToolBar()"> -->
       <!--<p class="navBarText">About</p>
@@ -16,7 +16,7 @@
     </div>
 
       <!--<img src="Images/index.jpg"/>-->
-      <img src="Images/Index.jpg" alt="White flower" title="White flower"/>
+      <img src="Images/Index.jpg"id="flower" alt="White flower" title="White flower"/>
       <!-- hmm I perhaps not... -->
   </div>
   <div id="content">
@@ -28,9 +28,7 @@ In my free time, I enjoy making small projects ranging from iOS apps, themes/pac
 strengths in CSS. Scroll below to see my past project!
       </p>
     </div>
-    <div class="container">
-      <p class="subTitle">Projects</p>
-    </div>
+
     <div class="parent">
     <div class="container" id="box2">
       <p class="subTitle">Prelude</p>
@@ -60,10 +58,11 @@ of iPhones to be of a Mac! This particular theme has accumulated 200K+ downloads
   </div>
   <div class="container">
     <p class="subTitle">Acorn</p>
+    <img src="Images/CocoaHero.jpg" id="cocoaHero" alt="Acorn banner" title="Acorn banner"/>
     <p class="blockText">
     One of my more ambitious project, Acorn, is a programming language made from scratch. It's the most challenging project I've taken on so far. Building a program that takes a program with infinite combinations of legal input became a mind-boggling realization.
-    This project took a month to complete and near a year to refine. From left-to-right, you will
-    see the order of how Acorn code becomes translated and ran. The process goes Acorn source code, lexed source, tokenized source and parse, finally Acorn output. Acorn is an interpreted-programming language written in Python, which means
+    This project took a month to complete and near a year to refine. Below you will
+    see the order of how Acorn code becomes translated and ran. The process goes <span style="color:rgba(255,151,87,1);">Acorn source code</span>, <span style="color:rgba(255,194,87,1);">lexed source</span>, <span style="color:rgba(88,139,220,1);">tokenized source and parse</span>, <span style="color:rgba(74,219,187,1);">finally Acorn output</span>. Acorn is an interpreted-programming language written in Python, which means
     that Acorn code becomes translated into and evaulated in Python. The goal of this project was to learn more about language creation, lexing, recursive-descent parsing, interpreting, language syntax/semantics,
     parse tress, abstract syntax trees, abstract-memory handling, lexical scoping, etc...
     </p>

@@ -8,9 +8,9 @@ function parallax(){
             //document.getElementById('x').innerHTML = x;
             //document.getElementById('y').innerHTML = y;
             //document.getElementById('z').innerHTML = z;
-            document.getElementById('icons').style.left = x/2.5+"px";
-            document.getElementById('icons').style.top = -10+y/2.5+"px";
-            //document.getElementById('parallax').style.left = -(x/3)+"px";
+            document.getElementById('icons').style.left = x/2+"px";
+            document.getElementById('icons').style.top = -10+y/2+"px";
+            document.getElementById('parallax').style.left = -(x/4)+"px";
 
         }, true);
     }
@@ -39,6 +39,9 @@ function navBarDrag(){
     }, false);
 }
 
+function hideNavBar(){
+  document.getElementById("navBar").style.display = "none";
+}
 var direction = false;
 function invertToolBar() {
     var bar = document.getElementById("navBar");
@@ -50,10 +53,18 @@ function invertToolBar() {
         bar.style.top = "-500px";
     }
 }
+
+function parallaxHeader(){
+    var y = window.pageYOffset;
+    document.getElementById("flower").style.width = 100+y/40+"%";
+    document.getElementById("flower").style.left = -y/8;
+}
 function main(){
   var mobile = checkIfMobile();
-  navBarDrag();
   if(mobile){
+    navBarDrag();
     parallax();
+  }else{
+    hideNavBar();
   }
 }
