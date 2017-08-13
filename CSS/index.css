@@ -17,9 +17,10 @@ body{
 }
 .navBarText{
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
-  background-color: grey;
+  text-shadow: 0px -2px 3px rgba(50,50,50,0.7);
+  color:rgba(240, 240, 240, 0.9);
 }
 .header{
   /*background: url("http://mita4829.github.io/Images/Index.jpg") no-repeat top center fixed;*/
@@ -72,7 +73,7 @@ a{
   position: absolute;
   -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  background-color: rgba(240, 240, 240, 0.6);
+  background-color: rgba(50, 50, 50, 0.8);
   border-radius: 0 0 20px 20px;
   top:-500px;
   width:100%;
@@ -85,7 +86,7 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 500px;
+    margin-top: 150px;
 }
 
 #icons{
@@ -142,7 +143,7 @@ a{
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .contactButtons{
-  width: 15%;
+  width: 10%;
   border-radius: 20px;
   margin: 10px;
 }
@@ -182,6 +183,12 @@ a{
 }
 #box4{
   position: relative;
+}
+.profession{
+  font-size: 20px;
+  font-weight: 500;
+  color:rgba(190,190,190,1);
+  text-align: left;
 }
 @-webkit-keyframes expand1 {
     0% {

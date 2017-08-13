@@ -59,12 +59,32 @@ function parallaxHeader(){
     document.getElementById("flower").style.width = 100+y/40+"%";
     document.getElementById("flower").style.left = -y/8;
 }
+
+function scrollToProject(){
+  location.href = "#";
+  location.href = "#projects";
+}
+
+function scrollToAbout(){
+  location.href = "#";
+  location.href = "#about";
+}
+
+function scrollToProfession(){
+  location.href = "#";
+  location.href = "#profession";
+}
+
+function scrollToContact(){
+  location.href = "#";
+  location.href = "#contact";
+}
 function main(){
   var mobile = checkIfMobile();
   if(mobile){
     navBarDrag();
     parallax();
   }else{
-    hideNavBar();
+    //hideNavBar();
   }
 }

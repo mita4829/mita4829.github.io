@@ -1,34 +1,34 @@
 <!--Theme by Michael Tang-->
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="CSS/index.css">
 <script type="text/javascript" src="Javascript/index.js"></script>
 </head>
 <body id="body" onload="main()">
-  <div id="navBar" onclick="invertToolBar()"> <!--onclick="invertToolBar()"> -->
-    <!--<p class="navBarText">About</p>
-    <p class="navBarText">Projects</p>
-    <p class="navBarText">Contact</p>-->
-    <!--<img src="http://mita4829.github.io/Images/sideButton.png" id="sideButton" onclick="presentSideView()"/>-->
+  <div id="navBar" onclick="invertToolBar()">
+    <p class="navBarText" onclick="scrollToAbout()">About</p>
+    <p class="navBarText" onclick="scrollToProject()" >Projects</p>
+    <p class="navBarText" onclick="scrollToProfession()">Profession</p>
+    <p class="navBarText" onclick="scrollToContact()">Contact</p>
     <img src="Images/Grabber.png" id="grabber"/>
-
   </div>
   <div class="header">
-      <!--<img src="Images/index.jpg"/>-->
       <img src="Images/Index.jpg"id="flower" alt="White flower" title="White flower"/>
       <!-- hmm I perhaps not... -->
   </div>
   <div id="content">
-    <div class="container">
+    <div class="container" id="about">
       <p class="subTitle">About</p>
       <p class="blockText">Hello! My name is Michael Tang. I am a senior at the University of Colorado - Boulder studying computer science and mathematics.
-My interest in computer science involve writting programs in C, C++, and Python, studying weird data structures, and learning how to write better algorithms that are not <i>O(n!)</i>.
+My interest in computer science involve writting programs in C, C++, and Python, studying weird data structures, and learning how to write better algorithms.
 In my free time, I enjoy making small projects ranging from iOS apps, themes/packages for jailbroken iPhones, to even working on my own programming language! plus this <i>silly</i> attempt at making my own website, recalling my all
-strengths in CSS. Scroll below to see my past project!
+strengths in CSS. Scroll below to see my past projects, profession, and contact information!
       </p>
     </div>
 
-    <div class="parent">
+    <div class="parent" id="projects">
     <div class="container" id="box2">
       <p class="subTitle">Prelude</p>
       <p class="blockText"><i>(view parallax effect on your mobile device)</i></p>
@@ -79,7 +79,24 @@ of iPhones to be of a Mac! This particular theme has accumulated 200K+ downloads
     <div class="circle" id="bl"><p></p></div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="profession">
+    <p class="subTitle">Profession</p>
+    <p class="profession"><span style="color:rgb(50,200,70)">Aug 2014 - Present</span> : University of Colorado - Boulder, Norlin Archive</p>
+    <p class="blockText">Present: I am working currently with others tracking all collections within the Norlin Archives in preparation to move their local database to an online database solution. My responsibilities include cross-referencing collections within the Norlin Archive stacks against their local database and finding anomalies.
+<br/><br/>
+2015-2016: I handled a subset of photograph order from patrons wishing to having historic/university photographs digitized for non-profit/profit use. My responsibilities included corresponding with the patrons, handling payments, and digitization of photographs.
+<br/><br/>
+2014-2015: Developed Python scripts to automate the process of floppy disk analysis. A large set of floppy disks were digitized, and each disk produced an extensive log on its state-of-condition. These Python script batch-examined the logs and yielded a report concerning possible corruption on track/sectors of disks.</p>
+<p class="profession">
+<span style="color:rgb(50,200,70)">Jun 2017 - Jul 2017</span> : University of Colorado - Boulder, Department of Computer Science
+</p>
+<p class="blockText">
+I held office hours for the students of the Intro to Programming summer 2017 class at CU Boulder. My responsibilities include holding hours of assistance for individuals with computer science questions regarding the course and assignments. The intro programming class centralizes around C++, learning variables, control structures, loops, classes, and basic I/O.
+</p>
+<p class="profession"><span style="color:rgb(50,200,70)">Aug 2016 - May 2017</span> : Boulder High School</p>
+<p class="blockText">I met once a week with the 9th grade AVID (Advancement via Individual Determination) students. I tutored AVID students mostly on mathematics and physics.</p>
+  </div>
+  <div class="container" id="contact">
     <p class="subTitle">Contact</p>
     <p class="blockText">Need to contact me? Questions, comments, concerns, or condiments? Click the mail icon to email me, or find me on Twitter, GitHub, or StackOverflow.</p>
     <div>
