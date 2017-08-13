@@ -15,6 +15,12 @@ body{
   padding: 0;
   height: 100%;
 }
+button{
+  font-size: 24px;
+  border-radius: 3px;
+  background-color: rgba(70,70,70,1);
+  color: rgba(170,170,170,1);
+}
 .navBarText{
   text-align: center;
   font-size: 40px;
@@ -36,7 +42,7 @@ body{
   display: block;
   position: absolute;
   height:auto;
-  top:-200px;
+  top:-90px;
   bottom: 0;
 }
 #content{
@@ -86,7 +92,7 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 #icons{
