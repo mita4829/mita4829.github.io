@@ -5,16 +5,15 @@
 <script type="text/javascript" src="Javascript/index.js"></script>
 </head>
 <body id="body" onload="main()">
+  <div id="navBar" onclick="invertToolBar()"> <!--onclick="invertToolBar()"> -->
+    <!--<p class="navBarText">About</p>
+    <p class="navBarText">Projects</p>
+    <p class="navBarText">Contact</p>-->
+    <!--<img src="http://mita4829.github.io/Images/sideButton.png" id="sideButton" onclick="presentSideView()"/>-->
+    <img src="Images/Grabber.png" id="grabber"/>
+
+  </div>
   <div class="header">
-    <div id="navBar" onclick="invertToolBar()"> <!--onclick="invertToolBar()"> -->
-      <!--<p class="navBarText">About</p>
-      <p class="navBarText">Projects</p>
-      <p class="navBarText">Contact</p>-->
-      <!--<img src="http://mita4829.github.io/Images/sideButton.png" id="sideButton" onclick="presentSideView()"/>-->
-      <img src="Images/Grabber.png" id="grabber"/>
-
-    </div>
-
       <!--<img src="Images/index.jpg"/>-->
       <img src="Images/Index.jpg"id="flower" alt="White flower" title="White flower"/>
       <!-- hmm I perhaps not... -->
@@ -33,14 +32,16 @@ strengths in CSS. Scroll below to see my past project!
     <div class="container" id="box2">
       <p class="subTitle">Prelude</p>
       <p class="blockText"><i>(view parallax effect on your mobile device)</i></p>
-      <p class="blockText">One of my favorite things to do is craft new icons for iPhones. I went back to the old iOS icons ideas and crafted each icon you see below from scratch. This year-long project yielded 50+ icons and over 3K downloads on the Cydia Store.</p>
+      <p class="blockText">One of my favorite things to do is craft new icons for iPhones. I went back to the old iOS icons ideas and crafted each icon you see below from scratch. This year-long project yielded 50+ icons and over 3K downloads on the Cydia Store.
+      The complete list of icons are <a href="Images/college.png">here</a> and my previous work of <a href="Images/highSchool.jpg">icons</a> before flatness took over.
+      </p>
       <div id="parallax">
         <img src="Images/Parallax.png" id="icons" alt="Prelude icons" title="Prelude icons"/>
         <!--<img src="Images/Parallax.png" id="icons"/>-->
       </div>
-      <!--<p id="x">x</p>
+      <!-- <p id="x">x</p>
       <p id="y">y</p>
-      <p id="z">z</p>-->
+      <p id="z">z</p> -->
     </div>
     <div class="container" id="box3">
       <p class="subTitle">MacOS GUI for iPhone</p>
@@ -57,43 +58,35 @@ of iPhones to be of a Mac! This particular theme has accumulated 200K+ downloads
     </div>
   </div>
   <div class="container">
-    <p class="subTitle">Acorn</p>
-    <img src="Images/CocoaHero.jpg" id="cocoaHero" alt="Acorn banner" title="Acorn banner"/>
+    <p class="subTitle">Acorn - Programming Language</p>
+    <img src="Images/AcornHero.png" id="cocoaHero" alt="Acorn banner" title="Acorn banner"/>
     <p class="blockText">
     One of my more ambitious project, Acorn, is a programming language made from scratch. It's the most challenging project I've taken on so far. Building a program that takes a program with infinite combinations of legal input became a mind-boggling realization.
-    This project took a month to complete and near a year to refine. Below you will
-    see the order of how Acorn code becomes translated and ran. The process goes <span style="color:rgba(255,151,87,1);">Acorn source code</span>, <span style="color:rgba(255,194,87,1);">lexed source</span>, <span style="color:rgba(88,139,220,1);">tokenized source and parse</span>, <span style="color:rgba(74,219,187,1);">finally Acorn output</span>. Acorn is an interpreted-programming language written in Python, which means
+    This project took a month to complete and near a year to refine. Acorn is an interpreted-programming language written in Python, which means
     that Acorn code becomes translated into and evaulated in Python. The goal of this project was to learn more about language creation, lexing, recursive-descent parsing, interpreting, language syntax/semantics,
     parse tress, abstract syntax trees, abstract-memory handling, lexical scoping, etc...
     </p>
+  </div>
+  <div class="container">
+    <p class="subTitle">Iris - Assistive Technology</p>
+    <p class="blockText">Iris is an iOS app that assist those with visual impairments. Iris uses <a href="https://github.com/tesseract-ocr/tesseract">Tesseract - OCR</a> to analyze image-text and converts it to digital text. A feature of Iris
+    translates further this image-text by turning it into viberational braille. See a demonstration video <a href="https://www.youtube.com/watch?v=btsu3TAQu9Q&feature=youtu.be">here</a>.</p>
     <div id="box4">
-      <textarea class="field">
-var n = 15;
-if(n%15 == 0){
-    print("Fizzbuzz");
-}else if(n%5 == 0){
-    print("Buzz");
-}else if(n%3 == 0){
-    print("Fizz");
-}; </textarea>
-<textarea class="field" id="lex">
-[var,n,=,15,;]
-[if,(,n,%,15,==,0,),{]
-[print,(,"Fizzbuzz",),;]
-[},else,if,(,n,%,5,==,0,),{]
-[print,(,"Buzz",),;]
-[},else,if,(,n,%,3,==,0,),{]
-[print,(,"Fizz",),;]
-[},;]
-</textarea>
-<textarea class="field" id="pars">
-Assign(Var(n),N(15))
-If(Eq(Binary("Mod",Var(n),N(15)),N(0)),Print("Fizzbuzz"),If(Eq(Binary("Mod",Var(n),N(5)),N(0)),Print("Buzz"),If(Eq(Binary("Mod",Var(n),N(3)),N(0)),Print("Fizz"),Null())))
-</textarea>
 
-<textarea class="field" id="output">
-Fizzbuzz
-</textarea>
+    <img src="Images/IrisBackground.png" id="IrisPhone"/>
+    <div class="circle" id="tl"><p></p></div>
+    <div class="circle" id="mr"><p></p></div>
+    <div class="circle" id="bl"><p></p></div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="subTitle">Contact</p>
+    <p class="blockText">Need to contact me? Questions, comments, concerns, or condiments? Click the mail icon to email me, or find me on Twitter, GitHub, or StackOverflow.</p>
+    <div>
+      <a href="https://twitter.com/mikt25?lang=en"><img src="Images/Twitter.png" class="contactButtons" title="twitter"/></a>
+      <a href="mailto:michaelt0122@gmail.com"><img src="Images/Mail.png" class="contactButtons" title="email"/></a>
+      <a href="https://github.com/mita4829"><img src="Images/Github.png" class="contactButtons" title="github"/></a>
+      <a href="https://stackoverflow.com/users/3726902/miket25?tab=profile"><img src="Images/SO.png" class="contactButtons" title="stackoverflow"/></a>
     </div>
   </div>
   </div>

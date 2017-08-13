@@ -25,10 +25,9 @@ body{
   /*background: url("http://mita4829.github.io/Images/Index.jpg") no-repeat top center fixed;*/
   height: 500px;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
-
 }
 
 .header img{
@@ -78,13 +77,15 @@ a{
   top:-500px;
   width:100%;
   height:600px;
-  z-index: 1;
+  z-index: 2;
 }
 
 #grabber{
-  position: absolute;
-  width: 100px;
-  margin-bottom: 0;
+    width:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 500px;
 }
 
 #icons{
@@ -129,35 +130,117 @@ a{
   position: relative;
   flex: 2;
 }
-#box4{
-  position: relative;
-}
-.field{
-  font-size: 22px;
-  position: relative;
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
-  background-color: rgba(255,151,87,1);
-  width:320px;
-  height:320px;
 
-  color:rgba(50,50,50,1);
-}
-#lex{
-  background-color: rgba(255,194,87,1);
-}
-#pars{
-  background-color: rgba(88,139,220,1);
-}
-#output{
-  background-color: rgba(74,219,187,1);
-}
+
 .parent{
   display: flex;
 }
 #cocoaHero{
-  width:75%;
+  width:100%;
   border-radius: 10px;
   margin: 0 auto;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.contactButtons{
+  width: 15%;
+  border-radius: 20px;
+  margin: 10px;
+}
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  background-color: rgba(50,50,205,1);
+  z-index: 0;
+}
+#IrisPhone{
+  position: relative;
+  z-index: 1;
+}
+#tl{
+  -webkit-animation:expand1 4s infinite;
+  -webkit-animation-duration: 4s;
+  opacity: 0;
+  top:15%;
+  left:40%;
+}
+#mr{
+  -webkit-animation: expand2 5s  infinite;
+  -webkit-animation-duration: 5s;
+  opacity: 0;
+  top:40%;
+  left:53%;
+}
+#bl{
+  -webkit-animation: expand3 4s  infinite;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  opacity: 0;
+  top:53%;
+  left:40%;
+}
+#box4{
+  position: relative;
+}
+@-webkit-keyframes expand1 {
+    0% {
+      width:0px;
+      height:0px;
+      top:15%;
+      left:40%;
+      opacity: 1;
+    }
+    50% {
+      width:250px;
+      height:250px;
+      left:30%;
+      top:0%;
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+@-webkit-keyframes expand2 {
+    0% {
+      width:0px;
+      height:0px;
+      top:40%;
+      left:53%;
+      opacity: 1;
+    }
+    50% {
+      width:250px;
+      height:250px;
+      left:50%;
+      top:35%;
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+
+@-webkit-keyframes expand3 {
+    0% {
+      width:0px;
+      height:0px;
+      top:63%;
+      left:45%;
+      opacity: 1;
+    }
+    50% {
+      width:250px;
+      height:250px;
+
+      top:58%;
+      left:30%;
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
 }
 @media only screen and (min-width:375px) and (max-width: 1000px) {
   .subTitle{
@@ -192,27 +275,58 @@ a{
     position: relative;
     width: auto;
   }
-  #box4{
-    position: relative;
+  #tl{
+    -webkit-animation:expand1 6s infinite;
+    -webkit-animation-duration: 6s;
+    opacity: 0;
+    top:20%;
+    left:35%;
   }
-  .field{
-    font-size: 30px;
-    position: relative;
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
-    background-color: rgba(255,151,87,1);
-    width:100%;
-    height:250px;
-    padding: 0;
-    color:rgba(30,30,30,1);
+  #bl{
+    -webkit-animation: expand3 5s  infinite;
+    -webkit-animation-duration: 5s;
+    opacity: 0;
+    top:58%;
+    left:35%;
   }
-  #lex{
-    background-color: rgba(255,194,87,1);
-  }
-  #pars{
-    background-color: rgba(88,139,220,1);
-  }
-  #output{
-    background-color: rgba(74,219,187,1);
-  }
+  @-webkit-keyframes expand3 {
+      0% {
+        width:0px;
+        height:0px;
+        top:63%;
+        left:35%;
+        opacity: 1;
+      }
+      50% {
+        width:250px;
+        height:250px;
 
+        top:58%;
+        left:20%;
+        opacity: 0;
+      }
+      100%{
+        opacity: 0;
+      }
+  }
+  @-webkit-keyframes expand1 {
+      0% {
+        width:0px;
+        height:0px;
+        top:15%;
+        left:35%;
+        opacity: 1;
+      }
+      50% {
+        width:250px;
+        height:250px;
+
+        top:0%;
+        left:20%;
+        opacity: 0;
+      }
+      100%{
+        opacity: 0;
+      }
+  }
 }

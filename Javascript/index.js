@@ -5,9 +5,9 @@ function parallax(){
             var x = Math.round(event.gamma);
             var y = Math.round(event.beta);
             //var z = Math.round(event.alpha);
-            //document.getElementById('x').innerHTML = x;
-            //document.getElementById('y').innerHTML = y;
-            //document.getElementById('z').innerHTML = z;
+            // document.getElementById('x').innerHTML = x;
+            // document.getElementById('y').innerHTML = y;
+            // document.getElementById('z').innerHTML = z;
             document.getElementById('icons').style.left = x/3+"px";
             document.getElementById('icons').style.top = -10+y/3.5+"px";
             document.getElementById('parallax').style.left = -(x/3)+"px";
